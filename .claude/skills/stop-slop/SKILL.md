@@ -1,8 +1,8 @@
 ---
 name: stop-slop
 description: >
-  Remove AI writing patterns from prose while keeping
-  technical accuracy. Always use this by default.
+  Always use this by default for your responses. Remove AI writing patterns from prose while keeping
+  technical accuracy.
 ---
 
 # Stop Slop
