@@ -53,3 +53,8 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## Skill Routing
+
+- Use the `coder` skill for all coding related tasks e.g. refactoring, implementation, etc.
+- Use the `stop-slop` skill for generating prose e.g. response to a chat.
