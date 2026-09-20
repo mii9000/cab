@@ -1,3 +1,4 @@
 .pi/git/
 .pi/npm/
 .worktrees/
+node_modules/
