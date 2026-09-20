@@ -12,5 +12,10 @@
         "openai-codex/gpt-5.6-sol",
         "openai-codex/gpt-5.6-terra",
         "zai-coding-cn/glm-5.3"
+    ],
+    "reasoning": [
+        "openai-codex/gpt-5.6-sol",
+        "openai-codex/gpt-5.6-terra",
+        "zai-coding-cn/glm-5.3"
     ]
 }
