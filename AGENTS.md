@@ -3,10 +3,10 @@
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
 
 Before implementing:
-- State your assumptions explicitly. If uncertain, ask.
-- If multiple interpretations exist, present them - don't pick silently.
+- State material assumptions explicitly. Ask only when different answers would materially change the implementation.
+- If multiple interpretations affect public APIs, data compatibility, security, dependencies, or significant architecture, present them - don't pick silently.
+- For low-impact ambiguity, choose a reversible, conventional default and state it.
 - If a simpler approach exists, say so. Push back when warranted.
-- If something is unclear, stop. Name what's confusing. Ask.
 
 ## 2. Simplicity First
 
@@ -41,9 +41,11 @@ The test: Every changed line should trace directly to the user's request.
 **Define success criteria. Loop until verified.**
 
 Transform tasks into verifiable goals:
-- "Add validation" → "Write tests for invalid inputs, then make them pass"
-- "Fix the bug" → "Write a test that reproduces it, then make it pass"
-- "Refactor X" → "Ensure tests pass before and after"
+- "Add validation" → "Verify invalid inputs are rejected"
+- "Fix the bug" → "Reproduce the bug, then verify the regression"
+- "Refactor X" → "Ensure existing checks pass before and after"
+
+Use the smallest practical verification. Add a regression test for behavior changes and bug fixes when the repository supports one. Use the repository's existing test, lint, build, and format commands when they are documented or discoverable; don't invent commands.
 
 For multi-step tasks, state a brief plan:
 ```
@@ -52,7 +54,7 @@ For multi-step tasks, state a brief plan:
 3. [Step] → verify: [check]
 ```
 
-Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+Strong success criteria let you loop independently. Ask before proceeding only when ambiguity affects public APIs, data compatibility, security, dependencies, or significant architecture.
 
 ## Skill Routing
 
