@@ -1,9 +1,14 @@
 {
-    "coding": [
+    "code": [
         "openai-codex/gpt-5.6-luna",
         "zai-coding-cn/glm-5.3"
     ],
-    "planning": [
+    "plan": [
+        "openai-codex/gpt-5.6-sol",
+        "openai-codex/gpt-5.6-terra",
+        "zai-coding-cn/glm-5.3"
+    ],
+    "review": [
         "openai-codex/gpt-5.6-sol",
         "openai-codex/gpt-5.6-terra",
         "zai-coding-cn/glm-5.3"
