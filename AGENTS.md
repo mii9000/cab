@@ -59,4 +59,4 @@ Strong success criteria let you loop independently. Ask before proceeding only w
 ## Skill Routing
 
 - Use the `coder` skill for all coding related tasks e.g. refactoring, implementation, etc.
-- Use the `stop-slop` skill for generating prose e.g. response to a chat.
+- Use the `stop-slop` skill for generating prose e.g. response to a chat, writing documentation, etc.
