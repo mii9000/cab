@@ -1,0 +1,15 @@
+{
+  "name": "create-cab",
+  "version": "1.0.0",
+  "description": "Install Coding Agent Boilerplate into a local project",
+  "type": "module",
+  "bin": {
+    "create-cab": "bin/create-cab.js"
+  },
+  "files": ["bin", "lib", "README.md"],
+  "scripts": {"test": "node --test"},
+  "engines": {"node": ">=18"},
+  "repository": {"type": "git", "url": "git+https://github.com/mii9000/cab.git"},
+  "keywords": ["coding-agent", "pi", "initializer"],
+  "dependencies": {"tar": "^7.5.22"}
+}
